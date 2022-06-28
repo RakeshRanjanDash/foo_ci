@@ -23,7 +23,7 @@ jobs:
     steps:
       - checkout
       - run: echo "Hello World" 
-  build:
+  mac-build:
     macos:
       xcode: 14.0.0
 
@@ -43,4 +43,4 @@ workflows:
      - build
   mac-build-workflow:
     jobs:
-     - build
+     - mac-build
