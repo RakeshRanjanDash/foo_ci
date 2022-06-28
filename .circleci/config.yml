@@ -17,7 +17,7 @@ jobs:
       - run:
           name: "Say hello"
           command: "echo Hello, World!"
- build:
+  build:
     docker:
       - image: cimg/ruby:3.0-node
     steps:
